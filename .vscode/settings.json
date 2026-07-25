@@ -1,0 +1,11 @@
+{
+  // --- Foundry / Solidity language-server config ---
+  // Remappings also live in remappings.txt (read by the Nomic Foundation
+  // "Solidity" extension) and in foundry.toml (read by forge). These settings
+  // additionally cover the Juan Blanco "solidity" extension, which needs the
+  // Foundry library layout spelled out to resolve imports and "Go to Definition".
+  "solidity.packageDefaultDependenciesDirectory": "lib",
+  "solidity.packageDefaultDependenciesContractsDirectory": "",
+  "solidity.compileUsingRemoteVersion": "v0.8.28",
+  "solidity.monoRepoSupport": false
+}
