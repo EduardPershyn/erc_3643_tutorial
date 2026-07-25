@@ -3,6 +3,7 @@ pragma solidity 0.8.28;
 
 import {IERC734} from "./interfaces/IERC734.sol";
 import {IERC735} from "./interfaces/IERC735.sol";
+import {IIdentity} from "./interfaces/IIdentity.sol";
 
 /// @title Identity — a simplified ONCHAINID.
 /// @notice Phase 2 deliverable: one on-chain identity that
@@ -21,7 +22,7 @@ import {IERC735} from "./interfaces/IERC735.sol";
 /// Simplifications vs. production ONCHAINID: no proxy/upgradeability, no
 /// execute()/approve() transaction model, and claim signatures are stored but
 /// not verified here (that is Phase 3).
-contract Identity is IERC734, IERC735 {
+contract Identity is IIdentity {
     // --- purpose constants ---
     uint256 public constant MANAGEMENT_KEY = 1;
     uint256 public constant ACTION_KEY = 2;
