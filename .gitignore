@@ -10,5 +10,11 @@ out/
 # Generated forge doc output (hand-written docs/ study notes are tracked)
 docs/book/
 
+# Stray screenshots / images (keep docs/ text-only)
+docs/**/*.png
+docs/**/*.jpg
+docs/*.png
+docs/*.jpg
+
 # Dotenv file
 .env
